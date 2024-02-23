@@ -1,0 +1,99 @@
+.hero {
+  background-color: #fafef1;
+}
+
+.heroContent {
+  margin-top: 90px;
+  max-width: 591px;
+}
+.heroContent h1 {
+  color: #131c1e;
+}
+.heroContent p {
+  margin-top: 30px;
+  max-width: 447px;
+  color: #424242;
+}
+.heroContent form {
+  margin-top: 60px;
+  display: flex;
+}
+.heroContent form input {
+  margin-right: 20px;
+  width: 320px;
+  height: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 2px solid #f5f5f5;
+  border-radius: 8px;
+  font-family: Outfit, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.heroContent form input::placeholder {
+  color: #f5f5f5;
+}
+.heroContent form input:focus {
+  outline: none;
+  border: 2px solid #b6ec3d;
+}
+.heroContent form button {
+  border: none;
+  border-radius: 8px;
+  padding: 16px 22px;
+  font-family: Outfit, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #b6ec3d;
+  color: #616161;
+}
+
+.heroImage {
+  margin-right: -30px;
+}
+
+.image {
+  width: 535px;
+  height: 579px;
+  background-image: url("../images/Hero-Image-min.png");
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Outfit, sans-serif, sans-serif;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  line-height: 126%;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 166%;
+}
+
+/*# sourceMappingURL=styles.css.map */

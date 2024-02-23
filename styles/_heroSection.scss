@@ -1,0 +1,60 @@
+.hero {
+  background-color: $Light-BG;
+}
+
+.heroContent {
+  margin-top: 90px;
+  max-width: 591px;
+  h1 {
+    color: $Secondary;
+  }
+  p {
+    margin-top: 30px;
+    max-width: 447px;
+    color: $Paragraph;
+  }
+  form {
+    margin-top: 60px;
+    display: flex;
+    input {
+      margin-right: 20px;
+      width: 320px;
+      height: 56px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border: 2px solid $Disabled;
+      border-radius: 8px;
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    input::placeholder {
+      color: $Disabled;
+    }
+    input:focus {
+      outline: none;
+      border: 2px solid $Primary;
+    }
+    button {
+      border: none;
+      border-radius: 8px;
+      padding: 16px 22px;
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 16px;
+      background-color: $Primary;
+      color: $Primary-Button-Text;
+    }
+  }
+}
+
+.heroImage {
+  margin-right: -30px;
+}
+
+.image {
+  width: 535px;
+  height: 579px;
+  background-image: url("../images/Hero-Image-min.png");
+  background-size: cover;
+}
