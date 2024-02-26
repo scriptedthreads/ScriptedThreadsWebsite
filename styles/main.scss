@@ -22,8 +22,19 @@ body {
   max-width: 1160px;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
 .flex-space-between {
   display: flex;
+  justify-content: space-between;
+}
+
+.flex-center-space-between {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -41,4 +52,17 @@ p {
   padding: 0;
   margin: 0;
   line-height: 166%;
+}
+
+button {
+  border-radius: $Border-Radius;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $Primary;
+  color: $Primary-Button-Text;
 }

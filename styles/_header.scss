@@ -1,0 +1,43 @@
+header {
+  background-color: $Secondary;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: $Primary;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+nav li {
+  margin-right: 50px;
+}
+
+nav li:last-child {
+  margin-right: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: $White;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+nav button {
+  border: none;
+  padding: 8px 16px;
+}
