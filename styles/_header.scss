@@ -16,6 +16,24 @@ header {
   color: $Primary;
 }
 
+.brand-name-mobile {
+  font-weight: 700;
+  font-size: 15px;
+  color: $Primary;
+  display: none; // Hide by default on larger screens
+}
+
+.threadsText {
+  font-weight: 300;
+}
+
+.hamburger-menu {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: none; // Hide by default on larger screens
+}
+
 nav ul {
   list-style: none;
   margin-top: 0px;
@@ -40,4 +58,30 @@ nav a {
 nav button {
   border: none;
   padding: 8px 16px;
+}
+
+.dropdown {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: none; // Hide by default on larger screens
+  position: absolute;
+  top: 60px;
+  background-color: $Pastel-Green;
+  text-align: center;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: $Secondary;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.dropdown button {
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
 }

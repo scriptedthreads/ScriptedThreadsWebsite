@@ -1,0 +1,208 @@
+/* MD - iPad - Reference Device */
+@media only screen and (max-width: 1090px) {
+  // main.scss
+  .container {
+    max-width: 904px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  // _header.scss
+  nav li {
+    margin-right: 30px;
+  }
+
+  // _heroSection
+  .heroContent {
+    margin-top: 60px;
+    form {
+      margin-top: 40px;
+      input {
+        width: 250px;
+        height: 45px;
+      }
+      button {
+        padding: 11px 22px;
+      }
+    }
+  }
+
+  .heroImageContainer {
+    margin-right: -22px;
+  }
+
+  .heroImage {
+    width: 400px;
+    height: 433px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  // main.scss
+  .container {
+    max-width: 774px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  // _heroSection
+  .heroContent {
+    margin-top: 50px;
+    form {
+      button {
+        padding: 11px 16px;
+      }
+    }
+  }
+
+  .heroImageContainer {
+    margin-right: -18px;
+  }
+
+  .heroImage {
+    width: 328px;
+    height: 355px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  // main.scss
+  .container {
+    max-width: 684px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  // _header.scss
+  nav li {
+    margin-right: 20px;
+  }
+
+  // _heroSection
+  .heroContent {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 325px;
+    p {
+      max-width: 293px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    form {
+      max-width: 250px;
+      flex-direction: column;
+      gap: 15px;
+      margin-left: auto;
+      margin-right: auto;
+
+      input {
+        width: auto;
+        margin-right: 0;
+      }
+
+      button {
+        height: 45px;
+      }
+    }
+  }
+}
+
+/* SM - iPhone - Reference Device */
+@media only screen and (max-width: 450px) {
+  // main.scss
+  .hero {
+    overflow: hidden;
+  }
+
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    max-width: 363px;
+  }
+
+  // _header.scss
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .brand-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+  }
+
+  .brand-name {
+    display: none;
+  }
+
+  .brand-name-mobile {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  // _heroSection
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .heroContent {
+    margin-top: 0px;
+    max-width: 100%;
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+  }
+
+  .heroImageContainer {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .heroImage {
+    margin-right: -10px;
+    width: 400px;
+    height: 388px;
+    background-image: url("../images/Hero-Image-Long-min.png");
+  }
+}

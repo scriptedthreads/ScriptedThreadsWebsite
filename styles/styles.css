@@ -16,6 +16,24 @@ header {
   color: #b6ec3d;
 }
 
+.brand-name-mobile {
+  font-weight: 700;
+  font-size: 15px;
+  color: #b6ec3d;
+  display: none;
+}
+
+.threadsText {
+  font-weight: 300;
+}
+
+.hamburger-menu {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
 nav ul {
   list-style: none;
   margin-top: 0px;
@@ -40,6 +58,32 @@ nav a {
 nav button {
   border: none;
   padding: 8px 16px;
+}
+
+.dropdown {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 60px;
+  background-color: #d7f496;
+  text-align: center;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #131c1e;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.dropdown button {
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
 }
 
 .hero {
@@ -86,11 +130,21 @@ nav button {
   padding: 16px 22px;
 }
 
-.heroImage {
+.perfectCourseText {
+  background-color: #b6ec3d;
+  padding-left: 5px;
+  margin-left: -5px;
+  padding-right: 5px;
+  margin-right: -5px;
+  padding-bottom: 5px;
+  margin-bottom: -5px;
+}
+
+.heroImageContainer {
   margin-right: -30px;
 }
 
-.image {
+.heroImage {
   width: 535px;
   height: 579px;
   background-image: url("../images/Hero-Image-min.png");
@@ -103,7 +157,7 @@ body {
   font-family: Outfit, sans-serif, sans-serif;
 }
 
-.section {
+section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -156,6 +210,173 @@ button {
 .btn-primary {
   background-color: #b6ec3d;
   color: #616161;
+}
+
+.btn-secondary {
+  background-color: #131c1e;
+  color: #b6ec3d;
+}
+
+/* MD - iPad - Reference Device */
+@media only screen and (max-width: 1090px) {
+  .container {
+    max-width: 904px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  p {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  nav li {
+    margin-right: 30px;
+  }
+  .heroContent {
+    margin-top: 60px;
+  }
+  .heroContent form {
+    margin-top: 40px;
+  }
+  .heroContent form input {
+    width: 250px;
+    height: 45px;
+  }
+  .heroContent form button {
+    padding: 11px 22px;
+  }
+  .heroImageContainer {
+    margin-right: -22px;
+  }
+  .heroImage {
+    width: 400px;
+    height: 433px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .container {
+    max-width: 774px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .heroContent {
+    margin-top: 50px;
+  }
+  .heroContent form button {
+    padding: 11px 16px;
+  }
+  .heroImageContainer {
+    margin-right: -18px;
+  }
+  .heroImage {
+    width: 328px;
+    height: 355px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .container {
+    max-width: 684px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 14px;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  .heroContent {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 325px;
+  }
+  .heroContent p {
+    max-width: 293px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heroContent form {
+    max-width: 250px;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heroContent form input {
+    width: auto;
+    margin-right: 0;
+  }
+  .heroContent form button {
+    height: 45px;
+  }
+}
+/* SM - iPhone - Reference Device */
+@media only screen and (max-width: 450px) {
+  .hero {
+    overflow: hidden;
+  }
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    max-width: 363px;
+  }
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0px;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .brand-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+  }
+  .brand-name {
+    display: none;
+  }
+  .brand-name-mobile {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .hero .container {
+    flex-direction: column;
+  }
+  .heroContent {
+    margin-top: 0px;
+    max-width: 100%;
+  }
+  .heroContent h1 {
+    font-size: 32px;
+  }
+  .heroContent p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .heroContent form {
+    margin-top: 30px;
+  }
+  .heroImageContainer {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .heroImage {
+    margin-right: -10px;
+    width: 400px;
+    height: 388px;
+    background-image: url("../images/Hero-Image-Long-min.png");
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
