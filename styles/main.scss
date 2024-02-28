@@ -54,6 +54,7 @@ p {
 }
 
 button {
+  border-width: 2px;
   border-radius: $Border-Radius;
   font-family: $font-family;
   font-weight: 700;
@@ -62,12 +63,14 @@ button {
 }
 
 .btn-primary {
+  border-color: $Primary-Dark;
   background-color: $Primary;
-  color: $Primary-Button-Text;
+  color: $Secondary-Light;
 }
 
 .btn-secondary {
-  background-color: $Secondary;
+  border-color: $Secondary-Dark;
+  background-color: $Secondary-Light;
   color: $Primary;
 }
 

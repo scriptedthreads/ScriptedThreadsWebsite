@@ -56,7 +56,6 @@ nav a {
 }
 
 nav button {
-  border: none;
   padding: 8px 16px;
 }
 
@@ -67,7 +66,7 @@ nav button {
   display: none; // Hide by default on larger screens
   position: absolute;
   top: 60px;
-  background-color: $Pastel-Green;
+  background-color: $Dropdown;
   text-align: center;
 }
 
@@ -81,7 +80,6 @@ nav button {
 }
 
 .dropdown button {
-  border: none;
   padding: 8px 16px;
   margin-top: 10px;
 }
