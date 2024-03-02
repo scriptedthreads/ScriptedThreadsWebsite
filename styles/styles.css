@@ -148,6 +148,119 @@ nav button {
   background-size: cover;
 }
 
+.first {
+  background-color: #0c1301;
+}
+
+.sectionContent {
+  max-width: 565px;
+}
+.sectionContent h2 {
+  max-width: 370px;
+  color: #b6ec3d;
+}
+.sectionContent p {
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.first .container:first-child {
+  margin-bottom: 60px;
+}
+
+.row-a .sectionImage {
+  width: 466px;
+  height: 405px;
+  background-image: url("../images/First-Image-A-min.png");
+  background-size: cover;
+}
+
+.row-b .sectionImage {
+  width: 464px;
+  height: 398px;
+  background-image: url("../images/First-Image-B-min.png");
+  background-size: cover;
+}
+
+.second {
+  background-color: #f8feef;
+}
+.second h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mobileCard {
+  display: none;
+}
+
+.card {
+  width: 169px;
+  min-height: 300px;
+  border: 1px solid #c4ef63;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.courseLogoContainer {
+  width: 84px;
+  height: 80px;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #c4ef63;
+  border-radius: 8px 0 8px 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courseLogo {
+  width: 50px;
+}
+
+.middle-line {
+  width: 25%;
+  border-color: #c4ef63;
+  border-style: dashed;
+}
+
+.cardContent h5 {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cardContent p {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.secondSectionContent {
+  margin-top: 60px;
+  text-align: center;
+}
+.secondSectionContent h3 {
+  color: #0c1301;
+  margin-bottom: 20px;
+}
+.secondSectionContent p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondSectionContent .caption {
+  color: #bdbdbd;
+  margin-bottom: 30px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -182,6 +295,30 @@ section {
 
 h1 {
   font-size: 55px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  line-height: 126%;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  line-height: 126%;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  line-height: 126%;
+}
+
+h5 {
+  font-size: 16px;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -225,8 +362,13 @@ button {
   h1 {
     font-size: 45px;
   }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+  }
   p {
-    margin-top: 20px;
     font-size: 16px;
   }
   nav li {
@@ -252,6 +394,26 @@ button {
     width: 400px;
     height: 433px;
   }
+  .sectionContent {
+    max-width: 442px;
+  }
+  .sectionContent h2 {
+    max-width: 285px;
+  }
+  .sectionContent p {
+    margin-top: 20px;
+  }
+  .row-a .sectionImage {
+    width: 365px;
+    height: 316px;
+  }
+  .row-b .sectionImage {
+    width: 365px;
+    height: 313px;
+  }
+  .middle-line {
+    width: 20%;
+  }
 }
 @media only screen and (max-width: 850px) {
   .container {
@@ -259,6 +421,12 @@ button {
   }
   h1 {
     font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 22px;
   }
   p {
     font-size: 15px;
@@ -276,6 +444,24 @@ button {
     width: 328px;
     height: 355px;
   }
+  .sectionContent {
+    max-width: 377px;
+  }
+  .sectionContent h2 {
+    max-width: 245px;
+    font-size: 30px;
+  }
+  .row-a .sectionImage {
+    width: 311px;
+    height: 269px;
+  }
+  .row-b .sectionImage {
+    width: 311px;
+    height: 266px;
+  }
+  .middle-line {
+    width: 15%;
+  }
 }
 @media only screen and (max-width: 770px) {
   .container {
@@ -283,6 +469,12 @@ button {
   }
   h1 {
     font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
   }
   p {
     font-size: 14px;
@@ -313,6 +505,24 @@ button {
   }
   .heroContent form button {
     height: 45px;
+  }
+  .sectionContent {
+    max-width: 332px;
+  }
+  .sectionContent h2 {
+    max-width: 200px;
+    font-size: 25px;
+  }
+  .row-a .sectionImage {
+    width: 273px;
+    height: 237px;
+  }
+  .row-b .sectionImage {
+    width: 273px;
+    height: 234px;
+  }
+  .middle-line {
+    width: 10%;
   }
 }
 /* SM - iPhone - Reference Device */
@@ -376,6 +586,76 @@ button {
     width: 400px;
     height: 388px;
     background-image: url("../images/Hero-Image-Long-min.png");
+  }
+  .first .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .first .container:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .sectionContent {
+    max-width: 100%;
+  }
+  .sectionContent h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sectionContent p {
+    margin-top: 10px;
+  }
+  .row-a .sectionImage {
+    width: 365px;
+    height: 316px;
+  }
+  .row-b .sectionImage {
+    width: 365px;
+    height: 313px;
+  }
+  .second h2 {
+    margin-bottom: 30px;
+  }
+  .mobileCards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mobileCard {
+    display: block;
+    border: 1px solid #c4ef63;
+    width: 303px;
+    min-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    overflow: clip;
+  }
+  .mobileCardHeader {
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #c4ef63;
+    display: flex;
+    align-items: center;
+  }
+  .courseLogoContainer {
+    border-radius: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardContent {
+    padding-top: 15px;
+  }
+  .secondSectionContent {
+    margin-top: 30px;
+  }
+  .card {
+    display: none;
+  }
+  .middle-line {
+    display: none;
   }
 }
 

@@ -9,8 +9,15 @@
     font-size: 45px;
   }
 
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
   p {
-    margin-top: 20px;
     font-size: 16px;
   }
 
@@ -42,6 +49,31 @@
     width: 400px;
     height: 433px;
   }
+
+  // _firstSection
+  .sectionContent {
+    max-width: 442px;
+    h2 {
+      max-width: 285px;
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  .row-a .sectionImage {
+    width: 365px;
+    height: 316px;
+  }
+  .row-b .sectionImage {
+    width: 365px;
+    height: 313px;
+  }
+
+  // _secondSection
+  .middle-line {
+    width: 20%;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -52,6 +84,14 @@
 
   h1 {
     font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
   }
 
   p {
@@ -76,6 +116,29 @@
     width: 328px;
     height: 355px;
   }
+
+  // _firstSection
+  .sectionContent {
+    max-width: 377px;
+    h2 {
+      max-width: 245px;
+      font-size: 30px;
+    }
+  }
+
+  .row-a .sectionImage {
+    width: 311px;
+    height: 269px;
+  }
+  .row-b .sectionImage {
+    width: 311px;
+    height: 266px;
+  }
+
+  // _secondSection
+  .middle-line {
+    width: 15%;
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -86,6 +149,12 @@
 
   h1 {
     font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
   }
 
   p {
@@ -123,6 +192,29 @@
         height: 45px;
       }
     }
+  }
+
+  // _firstSection
+  .sectionContent {
+    max-width: 332px;
+    h2 {
+      max-width: 200px;
+      font-size: 25px;
+    }
+  }
+
+  .row-a .sectionImage {
+    width: 273px;
+    height: 237px;
+  }
+  .row-b .sectionImage {
+    width: 273px;
+    height: 234px;
+  }
+
+  // _secondSection
+  .middle-line {
+    width: 10%;
   }
 }
 
@@ -204,5 +296,91 @@
     width: 400px;
     height: 388px;
     background-image: url("../images/Hero-Image-Long-min.png");
+  }
+
+  // _firstSection
+  .first .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .first .container:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .sectionContent {
+    max-width: 100%;
+    h2 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  .row-a .sectionImage {
+    width: 365px;
+    height: 316px;
+  }
+  .row-b .sectionImage {
+    width: 365px;
+    height: 313px;
+  }
+
+  // _secondSection
+
+  .second {
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  .mobileCards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobileCard {
+    display: block;
+    border: 1px solid $Primary-Light;
+    width: 303px;
+    min-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: $Border-Radius;
+    overflow: clip;
+  }
+
+  .mobileCardHeader {
+    height: 80px;
+    width: 100%;
+    background-color: $White;
+    border-bottom: 1px solid $Primary-Light;
+    display: flex;
+    align-items: center;
+  }
+
+  .courseLogoContainer {
+    border-radius: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardContent {
+    padding-top: 15px;
+  }
+
+  .secondSectionContent {
+    margin-top: 30px;
+  }
+
+  .card {
+    display: none;
+  }
+  .middle-line {
+    display: none;
   }
 }
