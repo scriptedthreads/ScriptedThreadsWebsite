@@ -74,6 +74,25 @@
   .middle-line {
     width: 20%;
   }
+
+  // _thirdSection
+
+  .thirdSectionImageContainer {
+    margin-right: 0;
+  }
+
+  .thirdSectionContent {
+    margin-right: 10px;
+  }
+
+  .thirdSectionImage {
+    width: 793px;
+    height: 469px;
+  }
+
+  .testimonials {
+    flex-wrap: nowrap;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -138,6 +157,24 @@
   // _secondSection
   .middle-line {
     width: 15%;
+  }
+
+  // _thirdSection
+
+  .thirdSectionImageContainer {
+    margin-right: -300px;
+  }
+
+  .thirdSectionContent {
+    max-width: 300px;
+    h2 {
+      min-width: 295px;
+    }
+  }
+
+  .thirdSectionImage {
+    width: 727px;
+    height: 430px;
   }
 }
 
@@ -215,6 +252,31 @@
   // _secondSection
   .middle-line {
     width: 10%;
+  }
+
+  // _thirdSection
+
+  .thirdSectionContent {
+    h2 {
+      min-width: 246px;
+    }
+  }
+
+  .thirdSectionImageContainer {
+    margin-right: -325px;
+  }
+
+  .thirdSectionImage {
+    width: 669px;
+    height: 396px;
+  }
+
+  .third-testimonial {
+    padding-top: 40px;
+  }
+  .testimonialCard {
+    padding: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -382,5 +444,27 @@
   }
   .middle-line {
     display: none;
+  }
+
+  // _thirdSection
+
+  .third-mobile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .thirdSectionImageContainer {
+    margin-top: 30px;
+    margin-right: -250px;
+  }
+
+  .thirdSectionImage {
+    width: 640px;
+    height: 379px;
+    background-image: url("../images/Quiz-Image-min.png");
+    background-size: cover;
+  }
+  .third-testimonial {
+    padding-top: 30px;
   }
 }

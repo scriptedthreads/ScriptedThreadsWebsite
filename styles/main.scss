@@ -1,3 +1,4 @@
+// sass --watch styles/main.scss styles/styles.css // TODO start it
 @import "variables";
 @import "mixins";
 @import "normalize";
@@ -6,6 +7,7 @@
 @import "heroSection";
 @import "firstSection";
 @import "secondSection";
+@import "thirdSection";
 
 body {
   margin: 0;
@@ -23,6 +25,10 @@ section {
   max-width: 1160px;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -36,6 +42,18 @@ section {
 .flex-center-space-between {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center-flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-column-space-between {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -57,6 +75,14 @@ h2 {
 
 h3 {
   font-size: 30px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  line-height: 126%;
+}
+
+h4 {
+  font-size: 20px;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -85,6 +111,7 @@ button {
   font-family: $font-family;
   font-weight: 700;
   font-size: 16px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 

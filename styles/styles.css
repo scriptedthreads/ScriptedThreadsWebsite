@@ -261,6 +261,100 @@ nav button {
   margin-bottom: 30px;
 }
 
+.third {
+  background-color: #0c1301;
+  overflow: clip;
+  padding-bottom: 0;
+}
+.third h3 {
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.third-testimonial {
+  padding-top: 50px;
+  background-color: #0c1301;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.third-testimonial::-webkit-scrollbar {
+  display: none;
+}
+
+.thirdSectionContent {
+  max-width: 450px;
+  margin-right: 60px;
+}
+.thirdSectionContent h2 {
+  color: #b6ec3d;
+  margin-bottom: 20px;
+  min-width: 440px;
+}
+.thirdSectionContent p {
+  color: #ffffff;
+  margin-bottom: 30px;
+  max-width: 310px;
+}
+.thirdSectionContent button {
+  padding: 12px 24px;
+}
+
+.thirdSectionImageContainer {
+  margin-right: -380px;
+}
+
+.thirdSectionImage {
+  width: 865px;
+  height: 512px;
+  background-image: url("../images/Quiz-Image-min.png");
+  background-size: cover;
+}
+
+.testimonials {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.testimonialCard {
+  min-width: 300px;
+  max-width: 300px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-right: 30px;
+}
+.testimonialCard p {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.avatarContainer {
+  margin-right: 20px;
+}
+
+.avatarImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.testimonialCard-card-a .avatarImage {
+  background-image: url("../images/john.png");
+}
+
+.testimonialCard-card-b .avatarImage {
+  background-image: url("../images/maria.png");
+}
+
+.testimonialCard-card-c .avatarImage {
+  background-image: url("../images/rohan.png");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -277,6 +371,10 @@ section {
   max-width: 1160px;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -290,6 +388,18 @@ section {
 .flex-center-space-between {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center-flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-column-space-between {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -311,6 +421,14 @@ h2 {
 
 h3 {
   font-size: 30px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  line-height: 126%;
+}
+
+h4 {
+  font-size: 20px;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -339,6 +457,7 @@ button {
   font-family: Outfit, sans-serif;
   font-weight: 700;
   font-size: 16px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
@@ -414,6 +533,19 @@ button {
   .middle-line {
     width: 20%;
   }
+  .thirdSectionImageContainer {
+    margin-right: 0;
+  }
+  .thirdSectionContent {
+    margin-right: 10px;
+  }
+  .thirdSectionImage {
+    width: 793px;
+    height: 469px;
+  }
+  .testimonials {
+    flex-wrap: nowrap;
+  }
 }
 @media only screen and (max-width: 850px) {
   .container {
@@ -461,6 +593,19 @@ button {
   }
   .middle-line {
     width: 15%;
+  }
+  .thirdSectionImageContainer {
+    margin-right: -300px;
+  }
+  .thirdSectionContent {
+    max-width: 300px;
+  }
+  .thirdSectionContent h2 {
+    min-width: 295px;
+  }
+  .thirdSectionImage {
+    width: 727px;
+    height: 430px;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -523,6 +668,23 @@ button {
   }
   .middle-line {
     width: 10%;
+  }
+  .thirdSectionContent h2 {
+    min-width: 246px;
+  }
+  .thirdSectionImageContainer {
+    margin-right: -325px;
+  }
+  .thirdSectionImage {
+    width: 669px;
+    height: 396px;
+  }
+  .third-testimonial {
+    padding-top: 40px;
+  }
+  .testimonialCard {
+    padding: 15px;
+    margin-right: 15px;
   }
 }
 /* SM - iPhone - Reference Device */
@@ -656,6 +818,23 @@ button {
   }
   .middle-line {
     display: none;
+  }
+  .third-mobile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .thirdSectionImageContainer {
+    margin-top: 30px;
+    margin-right: -250px;
+  }
+  .thirdSectionImage {
+    width: 640px;
+    height: 379px;
+    background-image: url("../images/Quiz-Image-min.png");
+    background-size: cover;
+  }
+  .third-testimonial {
+    padding-top: 30px;
   }
 }
 
