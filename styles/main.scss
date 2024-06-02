@@ -3,11 +3,11 @@
 @import "mixins";
 @import "normalize";
 @import "header";
-@import "footer";
 @import "heroSection";
 @import "firstSection";
 @import "secondSection";
 @import "thirdSection";
+@import "footer";
 
 body {
   margin: 0;
@@ -57,6 +57,12 @@ section {
   justify-content: space-between;
 }
 
+.flex-top-space-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 h1 {
   font-size: 55px;
   font-weight: 700;
@@ -91,6 +97,14 @@ h4 {
 
 h5 {
   font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  line-height: 126%;
+}
+
+h6 {
+  font-size: 14px;
   font-weight: 700;
   padding: 0;
   margin: 0;
