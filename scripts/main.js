@@ -12,3 +12,14 @@ toggleImg.addEventListener("click", function () {
     mobileDropdown.style.display = "none";
   }
 });
+
+// Brand logo navigate to home page
+let brandLogoImg = document.querySelector(".brand-logo");
+
+brandLogoImg.addEventListener("click", function () {
+  location.href = "#";
+});
+
+let copyrightYear = document.querySelector("#copyright-year");
+
+copyrightYear.appendChild(document.createTextNode(new Date().getFullYear()));

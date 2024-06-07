@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 header {
   background-color: #0c1301;
   padding-top: 25px;
@@ -10,6 +9,10 @@ header {
   width: 40px;
   height: 40px;
   margin-right: 10px;
+}
+
+.brand-logo:hover {
+  cursor: pointer;
 }
 
 .brand-name {
@@ -119,7 +122,7 @@ nav button {
   font-size: 16px;
 }
 .heroContent form input::placeholder {
-  color: #f5f5f5;
+  color: #e0e0e0;
 }
 .heroContent form input:focus {
   outline: none;
@@ -392,6 +395,15 @@ footer p {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
+}
+
+.footer-links p {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 166%;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .branding p {
