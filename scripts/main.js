@@ -26,11 +26,17 @@ copyrightYear.appendChild(document.createTextNode(new Date().getFullYear()));
 
 // Open And Close Get Started Modal
 var getStartedModal = document.getElementById("get-started-modal");
+var comingSoonModal = document.getElementById("coming-soon-modal");
 
 var getStartedButton = document.getElementById("get-started-btn");
 var getStartedButtonMobile = document.getElementById("get-started-btn-mobile");
+var blogButton = document.getElementById("blog-btn");
+var coursesButton = document.getElementById("courses-btn");
+var blogButtonMobile = document.getElementById("blog-btn-mobile");
+var coursesButtonMobile = document.getElementById("courses-btn-mobile");
 
-var modalCloseX = document.querySelector(".modal-close-x");
+var getStartedX = document.querySelector(".get-started-x");
+var comingSoonX = document.querySelector(".coming-soon-x");
 
 getStartedButton.onclick = function () {
   getStartedModal.style.display = "block";
@@ -40,12 +46,33 @@ getStartedButtonMobile.onclick = function () {
   getStartedModal.style.display = "block";
 };
 
-modalCloseX.onclick = function () {
+blogButton.onclick = function () {
+  comingSoonModal.style.display = "block";
+};
+
+blogButtonMobile.onclick = function () {
+  comingSoonModal.style.display = "block";
+};
+
+coursesButton.onclick = function () {
+  comingSoonModal.style.display = "block";
+};
+
+coursesButtonMobile.onclick = function () {
+  comingSoonModal.style.display = "block";
+};
+
+getStartedX.onclick = function () {
   getStartedModal.style.display = "none";
 };
 
+comingSoonX.onclick = function () {
+  comingSoonModal.style.display = "none";
+};
+
 window.onclick = function (event) {
-  if (event.target == getStartedModal) {
+  if (event.target == getStartedModal || event.target == comingSoonModal) {
     getStartedModal.style.display = "none";
+    comingSoonModal.style.display = "none";
   }
 };

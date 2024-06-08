@@ -42,8 +42,8 @@
           <ul class="flex-center">
             <li><a href="#">Home</a></li>
             <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/courses.html">Courses</a></li>
-            <li><a href="/pages/blog.html">Blog</a></li>
+            <li><p id="courses-btn">Courses</p></li>
+            <li><p id="blog-btn">Blog</p></li>
             <li>
               <button type="submit" id="get-started-btn" class="btn-primary">
                 Get Started
@@ -58,9 +58,15 @@
           <!-- Add your mobile links here -->
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#courses">Courses</a>
-          <a href="#blog">Blog</a>
-          <button type="submit" id="get-started-btn-mobile" class="btn-secondary">Get Started</button>
+          <p id="courses-btn-mobile">Courses</p>
+          <p id="blog-btn-mobile">Blog</p>
+          <button
+            type="submit"
+            id="get-started-btn-mobile"
+            class="btn-secondary"
+          >
+            Get Started
+          </button>
         </div>
       </section>
     </header>
@@ -366,7 +372,11 @@
     <div id="get-started-modal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <img src="./images/close-x.svg" alt="Modal Close" class="modal-close-x" />
+        <img
+          src="./images/close-x.svg"
+          alt="Modal Close"
+          class="modal-close-x get-started-x "
+        />
         <div class="modal-header">
           <h3>Get early access when we launch our courses!</h3>
         </div>
@@ -388,6 +398,24 @@
         </div>
       </div>
     </div>
+
+    <div id="coming-soon-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <img
+          src="./images/close-x.svg"
+          alt="Modal Close"
+          class="modal-close-x coming-soon-x"
+        />
+        <div class="modal-header">
+          <h3>Coming Soon!</h3>
+        </div>
+        <div class="modal-body">
+          <p>We are sorry for the delay, we will soon launch this page.</p>
+        </div>
+      </div>
+    </div>
+
     <script src="./scripts/main.js"></script>
   </body>
 </html>
