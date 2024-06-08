@@ -45,7 +45,9 @@
             <li><a href="/pages/courses.html">Courses</a></li>
             <li><a href="/pages/blog.html">Blog</a></li>
             <li>
-              <button type="submit" class="btn-primary">Get Started</button>
+              <button type="submit" id="get-started-btn" class="btn-primary">
+                Get Started
+              </button>
             </li>
           </ul>
         </nav>
@@ -58,7 +60,7 @@
           <a href="#about">About</a>
           <a href="#courses">Courses</a>
           <a href="#blog">Blog</a>
-          <button type="submit" class="btn-secondary">Get Started</button>
+          <button type="submit" id="get-started-btn-mobile" class="btn-secondary">Get Started</button>
         </div>
       </section>
     </header>
@@ -354,9 +356,38 @@
         </div>
       </div>
       <div class="container">
-        <p class="copyright">© Copyright <span id="copyright-year"></span> Scripted Threads Inc.</p>
+        <p class="copyright">
+          © Copyright <span id="copyright-year"></span> Scripted Threads Inc.
+        </p>
       </div>
     </footer>
+
+    <!-- Modals -->
+    <div id="get-started-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <img src="./images/close-x.svg" alt="Modal Close" class="modal-close-x" />
+        <div class="modal-header">
+          <h3>Get early access when we launch our courses!</h3>
+        </div>
+        <div class="modal-body">
+          <p>Please enter your email below so we can notify you</p>
+        </div>
+        <div class="modal-footer">
+          <form>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+              aria-label="Enter email for early access"
+            />
+            <button type="submit" class="btn-primary">Get Early Access</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

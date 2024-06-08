@@ -511,4 +511,11 @@
   .footer-links {
     gap: 15px;
   }
+
+  // COMPONENTS
+  .modal-content {
+    max-width: 320px;
+    max-height: 400px;
+    padding: 20px;
+  }
 }
