@@ -438,7 +438,7 @@ footer p {
 
 .modal-content {
   background-color: #f8feef;
-  margin: 20% auto;
+  margin: 150px auto;
   max-width: 760px;
   height: 500px;
   padding: 30px;
@@ -512,6 +512,40 @@ footer p {
 }
 
 #get-started-modal form button {
+  padding: 16px 22px;
+}
+
+#coming-soon-modal .modal-content {
+  max-height: 400px;
+}
+
+#coming-soon-modal .modal-header {
+  max-width: 200px;
+}
+#coming-soon-modal .modal-header h3 {
+  text-align: center;
+  color: #080d00;
+}
+
+#coming-soon-modal .modal-body {
+  max-width: 450px;
+}
+#coming-soon-modal .modal-body p {
+  text-align: center;
+  color: #3c4233;
+}
+
+#coming-soon-modal .modal-footer {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#coming-soon-modal .modal-footer p {
+  text-align: center;
+  color: #3c4233;
+}
+#coming-soon-modal .modal-footer button {
   padding: 16px 22px;
 }
 

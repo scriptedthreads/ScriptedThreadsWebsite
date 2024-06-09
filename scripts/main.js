@@ -34,6 +34,7 @@ var blogButton = document.getElementById("blog-btn");
 var coursesButton = document.getElementById("courses-btn");
 var blogButtonMobile = document.getElementById("blog-btn-mobile");
 var coursesButtonMobile = document.getElementById("courses-btn-mobile");
+var comingSoonButton = document.getElementById("coming-soon-btn");
 
 var getStartedX = document.querySelector(".get-started-x");
 var comingSoonX = document.querySelector(".coming-soon-x");
@@ -60,6 +61,11 @@ coursesButton.onclick = function () {
 
 coursesButtonMobile.onclick = function () {
   comingSoonModal.style.display = "block";
+};
+
+comingSoonButton.onclick = function () {
+  comingSoonModal.style.display = "none";
+  getStartedModal.style.display = "block";
 };
 
 getStartedX.onclick = function () {
