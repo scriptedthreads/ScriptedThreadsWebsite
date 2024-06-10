@@ -82,3 +82,93 @@ window.onclick = function (event) {
     comingSoonModal.style.display = "none";
   }
 };
+
+// Get Early Access Form Submit | Formspree
+
+var getEarlyAccessForm = document.getElementById("get-early-access-form");
+var getEarlyAccessFormModal = document.getElementById("get-early-access-form-modal");
+var getEarlyAccessFormInput = document.getElementById(
+  "get-early-access-form-input"
+);
+var getEarlyAccessFormInputModal = document.getElementById(
+  "get-early-access-form-input-modal"
+);
+
+async function handleGetEarlyAccessFormSubmit(event) {
+  event.preventDefault();
+  var getEarlyAccessFormStatus = document.getElementById("get-early-access-form-status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: getEarlyAccessForm.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        getEarlyAccessFormStatus.innerHTML = "Thanks for your submission!";
+        getEarlyAccessFormStatus.style.color = "#7fa52a";
+        getEarlyAccessForm.reset();
+        getEarlyAccessFormInput.disabled = true;
+        getEarlyAccessFormInputModal.disabled = true;
+      } else {
+        response.json().then((data) => {
+          if (Object.hasOwn(data, "errors")) {
+            getEarlyAccessFormStatus.innerHTML = data["errors"]
+              .map((error) => error["message"])
+              .join(", ");
+          } else {
+            getEarlyAccessFormStatus.innerHTML = "Oops! There was a problem submitting your form";
+            getEarlyAccessFormStatus.style.color = "red";
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      getEarlyAccessFormStatus.innerHTML = "Oops! There was a problem submitting your form";
+      getEarlyAccessFormStatus.style.color = "red";
+    });
+}
+
+async function handleGetEarlyAccessFormModalSubmit(event) {
+  event.preventDefault();
+  var getEarlyAccessFormStatusModal = document.getElementById("get-early-access-form-status-modal");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: getEarlyAccessFormModal.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        getEarlyAccessFormStatusModal.innerHTML = "Thanks for your submission!";
+        getEarlyAccessFormStatusModal.style.color = "#7fa52a"; // Primary-Dark
+        getEarlyAccessFormStatusModal.style.textAlign = "center"; 
+        getEarlyAccessFormStatusModal.style.marginTop = "10px"; 
+        getEarlyAccessFormModal.reset();
+        getEarlyAccessFormInput.disabled = true;
+        getEarlyAccessFormInputModal.disabled = true;
+      } else {
+        response.json().then((data) => {
+          if (Object.hasOwn(data, "errors")) {
+            getEarlyAccessFormStatusModal.innerHTML = data["errors"]
+              .map((error) => error["message"])
+              .join(", ");
+          } else {
+            getEarlyAccessFormStatusModal.innerHTML = "Oops! There was a problem submitting your form";
+            getEarlyAccessFormStatusModal.style.color = "red";
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      getEarlyAccessFormStatusModal.innerHTML = "Oops! There was a problem submitting your form";
+      getEarlyAccessFormStatusModal.style.color = "red";
+    });
+}
+
+getEarlyAccessForm.addEventListener("submit", handleGetEarlyAccessFormSubmit);
+getEarlyAccessFormModal.addEventListener("submit", handleGetEarlyAccessFormModalSubmit);

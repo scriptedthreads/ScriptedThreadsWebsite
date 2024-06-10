@@ -82,47 +82,21 @@
             your professional journey.
           </p>
           <form
-            action="https://live.us14.list-manage.com/subscribe/post?u=a6d4a10f25312777fb54dfbda&amp;id=bb5eb7938d&amp;f_id=0016b5e5f0"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            class="validate"
-            target="_blank"
+            id="get-early-access-form"
+            action="https://formspree.io/f/xyyrryar"
+            method="POST"
           >
             <input
+              id="get-early-access-form-input"
               type="email"
-              id="mce-EMAIL"
-              name="EMAIL"
+              name="email"
               placeholder="Email"
               required
               aria-label="Enter email for early access"
             />
-            <button
-              type="submit"
-              name="subscribe"
-              id="mc-embedded-subscribe"
-              class="btn-primary"
-            >
-              Get Early Access
-            </button>
-
-            <div id="mce-responses" class="clear foot">
-              <div
-                class="response"
-                id="mce-error-response"
-                style="display: none"
-              >
-                Success
-              </div>
-              <div
-                class="response"
-                id="mce-success-response"
-                style="display: none"
-              >
-                Error
-              </div>
-            </div>
+            <button type="submit" class="btn-primary">Get Early Access</button>
           </form>
+          <p id="get-early-access-form-status"></p>
         </div>
         <div class="heroImageContainer">
           <div class="heroImage"></div>
@@ -415,9 +389,14 @@
           <p>Please enter your email below so we can notify you</p>
         </div>
         <div class="modal-footer">
-          <form>
+          <form
+            id="get-early-access-form-modal"
+            action="https://formspree.io/f/xyyrryar"
+            method="POST"
+          >
             <input
               type="email"
+              id="get-early-access-form-input-modal"
               id="email"
               name="email"
               placeholder="Email"
@@ -426,6 +405,7 @@
             />
             <button type="submit" class="btn-primary">Get Early Access</button>
           </form>
+          <p id="get-early-access-form-status-modal"></p>
         </div>
       </div>
     </div>
