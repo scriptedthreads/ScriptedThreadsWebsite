@@ -256,7 +256,7 @@
             Take the quiz to know more about your skill level, and pick the
             right course.
           </p>
-          <button class="btn-primary">Take Quiz</button>
+          <button class="btn-primary" id="quiz-btn">Take Quiz</button>
         </div>
         <div class="thirdSectionImageContainer">
           <div class="thirdSectionImage"></div>
@@ -266,7 +266,7 @@
         <h3>Love for scripted threads...</h3>
       </div>
     </section>
-    <section style="background-color: #0c1301;">
+    <section style="background-color: #0c1301">
       <div class="container">
         <p
           style="
@@ -450,6 +450,47 @@
       </div>
     </div>
 
-    <script src="./scripts/main.js"></script>
+    <div id="quiz-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <img
+          src="./images/close-x.svg"
+          alt="Modal Close"
+          class="modal-close-x quiz-x"
+        />
+        <div class="modal-header">
+          <h3>Web Development Quiz</h3>
+          <p>Evaluate yourself for Web Dev</p>
+        </div>
+        <div class="modal-body">
+          <div id="quiz">
+            <!-- Questions will be populated here -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            id="quiz-submit-button"
+            class="btn-primary"
+            style="display: none"
+          >
+            Get Result
+          </button>
+          <button id="quiz-next-button" class="btn-primary">Next</button>
+
+          <div id="quiz-result">
+            <!-- Result will be displayed here -->
+          </div>
+          <div id="quiz-analysis" style="display: none">
+            <!-- Result analysis will be displayed here -->
+          </div>
+
+          <div id="question-number">
+            <!-- Question number will be displayed here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./scripts/quiz-data.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>

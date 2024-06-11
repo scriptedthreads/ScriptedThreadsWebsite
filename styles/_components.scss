@@ -13,7 +13,7 @@
   background-color: $Light-BG;
   margin: 150px auto;
   max-width: 760px;
-  height: 500px;
+  max-height: 500px;
   padding: 30px;
   border-radius: $Border-Radius;
 }
@@ -36,6 +36,7 @@
 .modal-footer {
   margin: auto;
   margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #get-started-modal .modal-header {
@@ -115,5 +116,92 @@
   }
   button {
     padding: 16px 22px;
+  }
+}
+
+#quiz-modal .modal-content {
+  max-height: 800px;
+}
+
+#quiz-modal .modal-header {
+  h3 {
+    text-align: center;
+    color: $Secondary-Dark;
+  }
+  p {
+    text-align: center;
+    color: $Secondary-Light;
+  }
+}
+
+#quiz-modal .modal-body {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  .quiz-question {
+    // <p>
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    line-height: 166%;
+    // </p>
+    color: $Secondary-Dark;
+  }
+  .quiz-answer {
+    background-color: $Dropdown;
+    max-width: 500px;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: $Border-Radius;
+    display: flex;
+    input {
+      height: 20px;
+      width: 20px;
+      margin-right: 8px;
+    }
+    label {
+      margin-top: -2px;
+      color: $Secondary-Light;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    input[type="radio"]:checked {
+      margin-right: 16px;
+    }
+  }
+}
+
+#quiz-modal .modal-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  #quiz-result {
+    // <h4>
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    line-height: 126%;
+    // </h4>
+    color: $Primary-Dark;
+  }
+
+  #quiz-analysis {
+    // <p>
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    line-height: 166%;
+    // </p>
+    color: $Secondary-Light;
+  }
+
+  #question-number {
+    color: $Caption;
   }
 }
