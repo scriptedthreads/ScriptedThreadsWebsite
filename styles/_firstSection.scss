@@ -32,3 +32,10 @@
   // Photo by Vlada Karpovich: https://www.pexels.com/photo/man-relaxing-and-working-on-his-laptop-4939638/
   background-size: cover;
 }
+
+.aboutpage {
+  .first {
+    color: $White;
+    border-bottom: 5px solid $Primary-Dark;
+  }
+}

@@ -96,6 +96,14 @@
 .testimonialCard-card-c {
   .avatarImage {
     background-image: url("../images/rohan.png");
-    // Photo by Midas Hofstra: https://unsplash.com/photos/man-taking-selfie-tidSLv-UaNs 
+    // Photo by Midas Hofstra: https://unsplash.com/photos/man-taking-selfie-tidSLv-UaNs
+  }
+}
+
+.aboutpage {
+  .third {
+    color: $White;
+    border-top: 5px solid $Primary-Dark;
+    padding-bottom: 60px;
   }
 }

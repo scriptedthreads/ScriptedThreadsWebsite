@@ -197,6 +197,11 @@ nav button {
   background-size: cover;
 }
 
+.aboutpage .first {
+  color: #ffffff;
+  border-bottom: 5px solid #7fa52a;
+}
+
 .second {
   background-color: #f8feef;
 }
@@ -274,6 +279,12 @@ nav button {
 .secondSectionContent .caption {
   color: #bdbdbd;
   margin-bottom: 30px;
+}
+
+.aboutpage .second {
+  background-color: #c4ef63;
+  text-align: center li;
+  text-align-text-decoration: none;
 }
 
 .third {
@@ -368,6 +379,12 @@ nav button {
 
 .testimonialCard-card-c .avatarImage {
   background-image: url("../images/rohan.png");
+}
+
+.aboutpage .third {
+  color: #ffffff;
+  border-top: 5px solid #7fa52a;
+  padding-bottom: 60px;
 }
 
 footer {

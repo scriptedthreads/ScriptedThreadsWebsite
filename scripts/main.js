@@ -19,7 +19,7 @@ toggleImg.addEventListener("click", function () {
 let brandLogoImg = document.querySelector(".brand-logo");
 
 brandLogoImg.addEventListener("click", function () {
-  location.href = "#";
+  location.href = "/";
 });
 
 let copyrightYear = document.querySelector("#copyright-year");
@@ -65,18 +65,23 @@ coursesButtonMobile.onclick = function () {
   comingSoonModal.style.display = "block";
 };
 
-comingSoonButton.onclick = function () {
-  comingSoonModal.style.display = "none";
-  getStartedModal.style.display = "block";
-};
-
-getStartedX.onclick = function () {
-  getStartedModal.style.display = "none";
-};
-
-comingSoonX.onclick = function () {
-  comingSoonModal.style.display = "none";
-};
+// To fix about page error
+if (comingSoonButton) {
+  comingSoonButton.onclick = function () {
+    comingSoonModal.style.display = "none";
+    getStartedModal.style.display = "block";
+  };
+}
+if (getStartedX) {
+  getStartedX.onclick = function () {
+    getStartedModal.style.display = "none";
+  };
+}
+if (comingSoonX) {
+  comingSoonX.onclick = function () {
+    comingSoonModal.style.display = "none";
+  };
+}
 
 window.onclick = function (event) {
   if (event.target == getStartedModal || event.target == comingSoonModal) {
@@ -98,7 +103,7 @@ var getEarlyAccessFormInputModal = document.getElementById(
 );
 
 async function handleGetEarlyAccessFormSubmit(event) {
-  event.preventDefault();
+    event.preventDefault();
   var getEarlyAccessFormStatus = document.getElementById(
     "get-early-access-form-status"
   );
@@ -181,26 +186,37 @@ async function handleGetEarlyAccessFormModalSubmit(event) {
     });
 }
 
-getEarlyAccessForm.addEventListener("submit", handleGetEarlyAccessFormSubmit);
-getEarlyAccessFormModal.addEventListener(
-  "submit",
-  handleGetEarlyAccessFormModalSubmit
-);
+// To fix about page error
+if (getEarlyAccessForm) {
+  getEarlyAccessForm.addEventListener("submit", handleGetEarlyAccessFormSubmit);
+}
+if (getEarlyAccessFormModal) {
+  getEarlyAccessFormModal.addEventListener(
+    "submit",
+    handleGetEarlyAccessFormModalSubmit
+  );
+}
 
 // Quiz Modal
 var quizModal = document.getElementById("quiz-modal");
 
 var quizButton = document.getElementById("quiz-btn");
 
-quizButton.onclick = function () {
-  quizModal.style.display = "block";
-};
+// To fix about page error
+if (quizButton) {
+  quizButton.onclick = function () {
+    quizModal.style.display = "block";
+  };
+}
 
 var quizX = document.querySelector(".quiz-x");
 
-quizX.onclick = function () {
-  quizModal.style.display = "none";
-};
+// To fix about page error
+if (quizX) {
+  quizX.onclick = function () {
+    quizModal.style.display = "none";
+  };
+}
 
 // Quiz Logic
 
@@ -239,8 +255,13 @@ function displayCurrentQuestion() {
     answerElement.appendChild(input);
     answerElement.appendChild(label);
   }
-  quizContainer.innerHTML = "";
-  quizContainer.appendChild(questionElement);
+  // To fix about page error
+  if (quizContainer) {
+    quizContainer.innerHTML = "";
+  }
+  if (quizContainer) {
+    quizContainer.appendChild(questionElement);
+  }
 }
 
 // Function to handle submission of answers
@@ -308,13 +329,21 @@ function showResult() {
 
 // Function to update the question number display
 function updateQuestionNumber() {
-  questionNumberContainer.textContent = `${currentQuestion + 1} / ${
-    questions.length
-  }`;
+  // To fix about page error
+  if (questionNumberContainer) {
+    questionNumberContainer.textContent = `${currentQuestion + 1} / ${
+      questions.length
+    }`;
+  }
 }
 
-quizSubmitButton.addEventListener("click", submitAnswers);
-nextButton.addEventListener("click", submitAnswers);
+// To fix about page error
+if (quizSubmitButton) {
+  quizSubmitButton.addEventListener("click", submitAnswers);
+}
+if (nextButton) {
+  nextButton.addEventListener("click", submitAnswers);
+}
 
 displayCurrentQuestion();
 updateQuestionNumber();
