@@ -103,20 +103,24 @@ var getEarlyAccessFormInputModal = document.getElementById(
 );
 
 async function handleGetEarlyAccessFormSubmit(event) {
-    event.preventDefault();
+  event.preventDefault();
   var getEarlyAccessFormStatus = document.getElementById(
     "get-early-access-form-status"
   );
-  var data = new FormData(event.target);
+
+  var email = event.target.elements["email"].value;
+  var data = { email: email };
+
   fetch(event.target.action, {
-    method: getEarlyAccessForm.method,
-    body: data,
+    method: event.target.method,
+    body: JSON.stringify(data),
     headers: {
       Accept: "application/json",
+      "Content-Type": "application/json",
     },
   })
     .then((response) => {
-      if (response.ok) {
+      if (response.ok || response.status === 204) {
         getEarlyAccessFormStatus.innerHTML = "Thanks for your submission!";
         getEarlyAccessFormStatus.style.color = "#7fa52a";
         getEarlyAccessForm.reset();
@@ -148,23 +152,39 @@ async function handleGetEarlyAccessFormModalSubmit(event) {
   var getEarlyAccessFormStatusModal = document.getElementById(
     "get-early-access-form-status-modal"
   );
-  var data = new FormData(event.target);
+
+  var email = event.target.elements["email"].value;
+  var data = { email: email };
+
   fetch(event.target.action, {
-    method: getEarlyAccessFormModal.method,
-    body: data,
+    method: event.target.method,
+    body: JSON.stringify(data),
     headers: {
       Accept: "application/json",
+      "Content-Type": "application/json",
     },
   })
     .then((response) => {
-      if (response.ok) {
+      console.log({ response });
+      console.debug(response);
+
+      if (response.ok || response.status === 204) {
         getEarlyAccessFormStatusModal.innerHTML = "Thanks for your submission!";
         getEarlyAccessFormStatusModal.style.color = "#7fa52a"; // Primary-Dark
         getEarlyAccessFormStatusModal.style.textAlign = "center";
         getEarlyAccessFormStatusModal.style.marginTop = "10px";
-        getEarlyAccessFormModal.reset();
-        getEarlyAccessFormInput.disabled = true;
-        getEarlyAccessFormInputModal.disabled = true;
+        // Reset form and disable inputs only if the elements are found
+        if (getEarlyAccessFormInput && getEarlyAccessFormInputModal) {
+          getEarlyAccessFormModal.reset();
+          getEarlyAccessFormInput.disabled = true;
+          getEarlyAccessFormInputModal.disabled = true;
+        } else {
+          console.error("Form input elements not found.");
+        }
+        // TODO there is some issue in finding these elements in about us page fix them
+        // getEarlyAccessFormModal.reset();
+        // getEarlyAccessFormInput.disabled = true;
+        // getEarlyAccessFormInputModal.disabled = true;
       } else {
         response.json().then((data) => {
           if (Object.hasOwn(data, "errors")) {
@@ -180,6 +200,8 @@ async function handleGetEarlyAccessFormModalSubmit(event) {
       }
     })
     .catch((error) => {
+      console.log({ error });
+
       getEarlyAccessFormStatusModal.innerHTML =
         "Oops! There was a problem submitting your form";
       getEarlyAccessFormStatusModal.style.color = "red";
